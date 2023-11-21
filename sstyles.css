@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Fraunces 144";
+  src: url(/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(/assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-purple: #24053e;
+  --bright-green: #44ffa1;
+  --gray-purple: #584d62;
+  --white-purple: #fcf8ff;
+  --white: #fff;
+  --desktop-screen: 1440px;
+  --tablet-screen: 768px;
+  --mobile-screen: 375px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Manrope";
+  background-color: var(--white-purple);
+}
+
+h1 {
+  color: var(--white);
+}
+
+.heading {
+  font-family: "Fraunces 144";
+  margin: auto;
+}
+.heading__desktop-l {
+  font-size: 5rem;
+  width: 635px;
+  line-height: 80px;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  font-family: "Manrope";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.primary {
+  padding: 13px 24.5px 16px 25.5px;
+  background-color: var(--bright-green);
+  border: 2px solid var(--bright-green);
+}
+.primary--default {
+  color: var(--dark-purple);
+}
+.primary--default:hover {
+  color: var(--bright-green);
+  background-color: transparent;
+}
+
+.secondary {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 3px var(--bright-green);
+  line-height: 32px;
+}
+.secondary--default {
+  color: var(--white);
+}
+.secondary--default:hover {
+  color: var(--bright-green);
+}
+
+header,
+#hero {
+  background-color: var(--dark-purple);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+#hero {
+  text-align: center;
+  height: 40vh;
+}
+#hero .underline {
+  border-bottom: solid 3px var(--bright-green);
+  line-height: 32px;
+}
+#hero img {
+  margin: 3rem;
+}/*# sourceMappingURL=sstyles.css.map */
